@@ -27,7 +27,7 @@ def Main_Page():
     filename = safeString.replace(" ","") + ".aac"
 
     print("hi")
-    ys.download(filename=filename,output_path=path,skip_existing=True)
+    ys.download(filename=filename,output_path=path,skip_existing=True,timeout=20,max_retries=2)
     print(ys.get_file_path())
 
 
